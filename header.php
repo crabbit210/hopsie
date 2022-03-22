@@ -23,7 +23,7 @@
 <body <?php body_class('d-flex flex-column h-100'); ?>>
 
 <header class="site-header" role="banner">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="<?= home_url( '/' ); ?>"><?php bloginfo( 'name' ); ?></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,6 +32,10 @@
       <div class="collapse navbar-collapse" id="navbarMain">
         <?php h5bs_primary_nav(); ?>
       </div>
+      <ul class="nav navbar-nav navbar-right account-tabs">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
     </div>
   </nav>
 </header>
